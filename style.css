@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Mulish;
+}
+/* ####################################### navbar ########################################################## */
+.navbar{
+    display:fixed;
+    top:0;
+    left:0;
+}
+.navbar-container{
+    width: 85%;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    padding:2rem 0;
+}
+input[type="button"]{
+    width:28px;
+    height:28px;
+    position: absolute;
+    left:98%;
+    opacity: 0;
+    z-index: 50;
+}
+.navbar-container .logo{
+    width:45%;
+}
+.navbar-container .logo img{
+    z-index:100;
+}
+.navbar-container .menu-container{
+    display:none;
+}
+
+/* ####################################### main section ####################################################### */
+.visual-container{
+    width: 85%;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: 1fr;
+    row-gap:1.5rem;
+
+}
+.visual-image{
+    max-width: 450px;
+    width:100%;
+    margin :0 auto;
+}
+.visual-image img{
+    width:100%;
+    object-fit: cover;
+    object-position: center;
+}
+.visual-content{
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    gap:1rem;
+}
+.visual-content h1{
+    font-size: 2.2rem;
+}
+.visual-content p{
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+.visual-content a{
+    text-decoration: none;
+    color:white;
+    padding:1rem 2rem;
+    background-color: #458FF6;
+    border-radius: 15px;
+    width:130px;
+    margin:0 auto;
+    font-size: 1.4rem;
+}
+
+/* ######################################## services ################################################ */
+
+.services-container{
+    width:85%;
+    margin:4rem auto;
+    display: grid;
+    gap:2.4rem;
+}
+.services-info>h3{
+    font-size: 2rem;
+    padding-bottom: 1.2rem;
+    font-weight: bold;
+}
+.services-info>p{
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+.services-info{
+    text-align: center;
+}
+.services-category{
+    display: grid;
+    gap: 2.4rem;
+}
+.doctor{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1.2rem;
+}
+.detail{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.info-element{
+    font-size: 1.6rem;
+}
+.info-details{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* ######################################################### form section ######################################################## */
+
+.form-container{
+    width: 85%;
+    margin: 0 auto;
+    padding: 1rem 0rem;
+}
+.form{
+    display: grid;
+    gap:1.8rem;
+}
+.form-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+.form-info>h3{
+    font-size: 2rem;
+}
+.div-manage{
+    display: flex;
+    flex-direction: column;
+}
+.details-div{
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem;
+}
+.input-edit{
+    border-radius: 10px;
+    outline:none;
+    padding:1rem;
+    font-size: 1.6rem;
+    border:1px solid #6a5656;
+}
+form label{
+    font-size: 1.2rem;
+}
+.remaining-div .textarea-div textarea{
+    padding:1rem;
+    height:100px;
+    outline: none;
+    font-size: 1.6rem;
+    width:100%;
+    border-radius: 10px;
+} 
+.email-div{
+    display: flex;
+    flex-direction: column;
+}
+.labels label{
+    font-size: 1.2rem;
+}
+.remaining-div{
+    display: grid;
+    gap:1.2rem;
+}
+.submit-btn{
+    margin:0 auto;
+}
+.submit-btn input[type="submit"]{
+    padding:1rem 1.6rem;
+    border-radius:15px;
+    color: #458FF6;
+    border:1px solid #458FF6;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* ########################################################### footer section ############################################## */
+
+.footer{
+    background: #5B9BF3;
+    padding:50px 0;
+}
+.footer-container{
+    width:85%;
+    margin:0 auto;
+    color: white;
+    display: grid;
+    gap:1rem;
+    padding:2.5rem 0rem;
+    max-width: 1000px;
+}
+.head{
+    font-size: 1.8rem;
+    text-align: center;
+}
+.trafalgar-info>p{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+.trafalgar-info>p:last-child{
+    text-align: center;
+    font-size: 1rem;
+}
+.logo-info{
+    margin-bottom: 0.5rem;
+}
+.ul-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+}
+.ul-info li{
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+.ul-li-info{
+    gap: 0.5rem;
+}
+.a-info li a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.2rem;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* nav media query */
+@media screen and (min-width:768px){
+    input[type="button"]{
+        display:none;
+    }
+    .navbar-container .menu-container{
+    display:flex;
+    justify-content: space-between;
+    width: 55%;
+    }
+    .navbar-container .menu-container li a{
+        text-decoration: none;
+        font-size: 1.6rem;
+        color:#1f1534;
+    }
+    #home{
+        font-weight: bold;
+    }
+    .navbar-container .menu-container li{
+        list-style-type: none;
+    }
+    .navbar-container .hamburger-container{
+        display: none;
+    }
+}
+
+/* visual container media query */
+
+@media screen and (min-width:768px) {
+    .visual-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .visual-image{
+        order:2
+    }
+    .visual-content{
+        padding:0 15%;
+        order:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: start;
+    }
+
+    .visual-content a{
+        margin: 0;
+    }
+    .visual-content h1{ 
+        font-size: 3.2rem;
+    }
+    .visual-content p{
+        margin-bottom: 1.3rem;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .visual-content{
+        padding: 0 15%;
+    }
+}
+
+/* services menu media query */
+
+@media screen and (min-width:645px) {
+    .services-category{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width:1200px) {
+    .services-category{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* media query for form */
+@media screen and (min-width:650px){
+    .details-div{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .div-manage{
+        width:100%;
+    }
+    .div-manage input[type="text"]{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .form-container{
+        width:70%;
+    }
+}
+
+/* media query for footer */
+@media screen and (min-width:650px){
+    .footer-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .trafalgar-info>p:last-child{
+        text-align: start;
+    }
+    .trafalgar-info>p{
+        text-align: start;
+    }
+    .head1{
+        text-align: start;
+    }
+}
+
